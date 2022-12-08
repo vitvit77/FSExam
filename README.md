@@ -1,4 +1,7 @@
 SETUP:
+
+app/config.py
+
 pip install poetry
 poetry install
 cd app
