@@ -1,11 +1,11 @@
-
+SETUP:
 pip install poetry
 poetry install
-
 cd app
-
 uvicorn fastapi_server:app --host 127.0.0.1 --port 9999
 
+
+Queryes:
 
 GET:
 http://localhost:9999/sensors
