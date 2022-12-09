@@ -17,11 +17,15 @@ Queryes:
 
 GET:
 http://localhost:9999/sensors
+
 http://localhost:9999/sensors/14
+
 http://localhost:9999/sensors/14/param
 
 POST:
+
 http://localhost:9999/sensors/create
+
 {
     "description": "description",
     "qty": 1
@@ -29,6 +33,7 @@ http://localhost:9999/sensors/create
 
 Добавление параметров сенсору
 http://localhost:9999/sensors/14/param
+
 {   
     "param": 6
 }
