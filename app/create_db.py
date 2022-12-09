@@ -3,14 +3,14 @@ import sqlite3
 # DB_NAME = "sensors.db"
 
 def get_database_connection():
-    con = sqlite3.connect("sensors.db")
+    con = sqlite3.connect("sensors.db", check_same_thread=False)
 
     return con
 
 def create_table():
     create_table_sens = """ CREATE TABLE Sensors(
         id          INTEGER PRIMARY KEY     AUTOINCREMENT,
-        qty      TEXT                NOT NULL,
+        qty      INTEGER                NOT NULL,
         description       TEXT                NOT NULL
     )   
     """
