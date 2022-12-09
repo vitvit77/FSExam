@@ -56,5 +56,5 @@ def read_sensors_delete(item_id: int):
 
 @app.post("/sensors/create")
 def post_item(request: CreateSensorModel):
-    insertId = db.createSensor(request.description, request.qty)
-    return JSONResponse(status_code=200, content={"id": insertId, "description": request.description, "qty": request.qty})
+    result = db.createSensor(request.description, request.qty)
+    return JSONResponse(status_code=200, content={"response": result})

@@ -36,7 +36,7 @@ class Database:
             return False
         self.cursor.execute('DELETE FROM Sensors WHERE id = :id', {"id": item_id})
         self.connect.commit()
-        self.deleteSensorParamsById(id)
+        self.deleteSensorParamsById(item_id)
         return True
 
     def deleteSensorParamsById(self, item_id) -> bool:
