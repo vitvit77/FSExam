@@ -6,6 +6,9 @@ import db
 
 db = db.Database()
 
+print(db.getSensorById(1))
+#print(db.getAllSensors())
+
 app = FastAPI()
 
 
